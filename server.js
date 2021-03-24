@@ -10,7 +10,9 @@ const argv = yargs(hideBin(process.argv))
     description: 'Express server port',
     type: 'number'
   }).argv
-const port = argv.port ? argv.port : 80
+
+const port = process.env.PORT || (argv.port ? argv.port : 80)
+
 
 const app = express()
 app.use(cors())
