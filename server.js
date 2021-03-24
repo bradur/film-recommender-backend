@@ -2,7 +2,7 @@ import express from "express"
 import cors from 'cors'
 import routes from './src/routes/index.js'
 
-const port = 8080
+const port = 80
 
 const app = express()
 app.use(cors())
