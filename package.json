@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js -p 8080"
   },
   "proxy": "http://localhost:8080",
   "author": "",
@@ -16,5 +16,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "yargs": "^16.2.0"
   }
 }
